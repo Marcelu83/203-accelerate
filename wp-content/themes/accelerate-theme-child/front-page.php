@@ -23,6 +23,31 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+	<section class="featured-work">
+		<div class="site-content">
+		<h3>Featured work</h3>
+		<ul>
+		<?php query_posts('post_type=case_studies&posts_per_page=3');?>
+ 		 	<?php while ( have_posts() ) : the_post();
+				 $image1 = get_field('image_1');
+				 $size="medium";?>
+
+				 <li class="sample-case-study">
+            <figure>
+							<?php echo wp_get_attachment_image($image1,$size); ?>
+						</figure>
+
+						<h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+
+				</li>
+
+	 		 <?php endwhile; ?>
+	 		 <?php wp_reset_query(); ?>
+
+			 </ul>
+		 </div>
+	</section>
+
 	<section class="recent-posts">
  <div class="site-content">
 	 <div class="blog-post">

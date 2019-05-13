@@ -39,6 +39,7 @@ Text Domain:  accelerate-theme-child
 
 .blog-post h3 {
 	font-size: 1.5em;
+
 }
 
 .read-more-link {
@@ -46,4 +47,63 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/*Styles for case study posts*/
+
+article .case-study-sidebar{
+                            width:35%;
+                            float:left;
+}
+
+article .case-study-sidebar h2 {font:500 1.5em/1.50 'Montserrat', 'Open Sans', Arial, sans-serif;
+              color: #000000;
+              margin: 1em 0 .5em;
+}
+
+article .case-study-sidebar h4 {font:300 0.8em/1.50 'Montserrat', 'Open Sans', Arial, sans-serif;
+              color: #000000;
+              margin: 1em 0 .5em;
+}
+
+.img-container {overflow:auto;
+                margin-left:30em;
+
+}
+
+.thumbnail {margin-bottom:3em;
+
+}
+
+img {width:100%;
+      height:auto;
+
+}
+
+/*Homepage Featured Work Styles*/
+
+.site-content h3 {text-align:center;
+
+}
+
+.sample-case-study {display:inline-block;
+                          float:left;
+                          list-style: none;
+
+}
+
+.sample-case-study figure {
+                          margin-top:1em;
+                          padding-right:10px;
+                          width:90%;
+
+}
+
+.sample-case-study h4 {font-weight:300;
+                      margin-bottom:3em;
+
+}
+
+.sample-case-study h4 {text-align:center;
+
 }

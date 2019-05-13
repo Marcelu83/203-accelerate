@@ -16,3 +16,26 @@ function accelerate_child_scripts(){
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
+/* First part of post gives the custom post a name 'case studies' through the
+register_post_type template tag.
+Next part is an array that defines settings and properties for the custom post type.
+'Case Studies' is the name visible in the WP Admin.
+'Case Study' is the visible name for individual instances.
+Slug 'case-studies' its the name that will appear in the URL for an instance of a case study,
+*/
+
+function create_custom_post_types() {
+    register_post_type( 'case_studies',
+        array(
+            'labels' => array(
+                'name' => __( 'Case Studies' ),
+                'singular_name' => __( 'Case Study' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'case-studies' ),
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );
