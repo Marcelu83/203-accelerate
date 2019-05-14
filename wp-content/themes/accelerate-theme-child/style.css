@@ -97,7 +97,7 @@ img {width:100%;
 
 .sample-case-study figure {
                           margin-top:1em;
-                          padding-right:10px;
+                          padding-right:5px;
                           width:90%;
 
 }
@@ -114,11 +114,13 @@ img {width:100%;
 /*Custom Icon Navigation Menu Styles*/
 
 
-ul li {display:inline-block;
+nav ul li {display:inline-block;
   list-style:none;
   margin-left:10px;
 
 }
+
+
 
 #menu-item-13, #menu-item-14, #menu-item-47357 {background:black;
                                                 width:40px;
