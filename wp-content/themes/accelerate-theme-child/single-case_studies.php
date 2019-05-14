@@ -26,31 +26,27 @@ get_header(); ?>
 								<?php the_content();?>
 
 				<p class="read-more-link"><a href="<?php echo $site_link;?>">Visit Live Site</a></p>
+				<p class="read-more-link"><a href="<?php echo site_url ('/case-studies/')?>">Back to Work</a></p>
+
+
 				</aside>
 
-				<div class="img-container">
-				<div class="thumbnail">
+				<div class="case-study-images">
 
 					<?php if ($image1){
 						echo wp_get_attachment_image($image1,$size);
 					}?>
 
-				</div>
-				<div class="thumbnail">
 
 					<?php if($image2){
 						echo wp_get_attachment_image($image2,$size);
 					}?>
 
-				</div>
-
-				<div class="thumbnail">
 
 					<?php if($image3){
 						echo wp_get_attachment_image($image3,$size);
 					}?>
 
-				</div>
 				</div>
 				</article>
 
