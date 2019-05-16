@@ -37,5 +37,22 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+		/*Creating Custom Post Type for About and Services Page.
+		Post type to be used along with a custom page template for About, to be used in a single instance
+		and not globally*/
+
+		register_post_type( 'services',
+					array(
+								'labels'=>array(
+									'name'=>__('Services'),
+									'singular_name' =>__('Service')
+								),
+								'public' =>true,
+								'has archive'=>false,
+								'rewrite'=> array('slug'=> 'accelerate-services'),
+								)
+					);
+
 }
 add_action( 'init', 'create_custom_post_types' );

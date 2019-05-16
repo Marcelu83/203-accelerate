@@ -136,3 +136,24 @@ nav ul li {display:inline-block;
 .icon-2x {color:white;
 
 }
+
+/*Contact Form Styles*/
+
+
+div .nf-before-form {padding-top:3em;
+
+}
+
+.nf-form-fields-required, .ninja-forms-req-symbol {display:none;
+
+}
+
+#nf-field-1-wrap, #nf-field-2-wrap {width:100%;
+}
+
+#nf-field-4.ninja-forms-field.nf-element
+
+{background:#45ac9d;
+  width:30%;
+  float:right;
+}
