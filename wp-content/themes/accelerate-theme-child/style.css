@@ -157,3 +157,46 @@ div .nf-before-form {padding-top:3em;
   width:30%;
   float:right;
 }
+
+/*Styles for Service post*/
+
+.individual-services {height:auto;
+
+}
+
+.services-sidebar {width:60%;
+  float:right;
+  overflow:auto;
+}
+
+.services-sidebar h3 {text-align:left;
+
+
+}
+
+div .services-images {overflow:clear;
+                      width:20%;
+                      margin-left:3em;
+
+
+}
+
+
+/*Styles for About Page Posts*/
+
+.main-content-about h3 {display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        padding:0 17em;
+
+
+}
+
+div .site-content-services{display:block;
+                          text-align:center;
+
+}
+
+.site-content-services h3 {text-transform: uppercase;
+
+}

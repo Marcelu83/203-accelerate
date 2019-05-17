@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="home-page hero-content">
-		<div class="main-content" role="main">
+		<div class="main-content-about" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
@@ -24,9 +24,24 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<section class="company-services">
-		<div class="site-content">
+		<div class="site-content-services">
 		<h3>Our Services</h3>
-		<p>We take pride in our clients and the content we create for them.
+		<p>We take pride in our clients and the content we create for them.<br>
 			Here's a brief overview of our offered services.</p>
+		</div>
+
+		<div class="description-services">
+			<?php query_posts('post_type=services');?>
+				<?php while ( have_posts() ) : the_post();
+					$image=get_field('image_illustration');
+					$size="full";?>
+
+					<?php the_title();?>
+				<?php the_content();?>
+				<?php echo wp_get_attachment_image($image,$size);?>
+			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
+		</div>
+	</section>
 
 <?php get_footer(); ?>
