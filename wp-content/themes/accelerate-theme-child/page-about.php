@@ -41,6 +41,7 @@ get_header(); ?>
 				<?php echo wp_get_attachment_image($image,$size);?>
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
+
 		</div>
 	</section>
 

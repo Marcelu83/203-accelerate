@@ -45,8 +45,8 @@ get_header(); ?>
 	 		 <?php wp_reset_query(); ?>
 
 			 </ul>
-		 </div>
-	</section>
+		 </div><!--site content-->
+	</section><!--featured work-->
 
 	<section class="recent-posts">
  <div class="site-content">
@@ -62,8 +62,24 @@ get_header(); ?>
 		 <?php wp_reset_query(); ?>
 
 	 </div>
-
  </div>
 </section>
+
+
+	 <div class="site-content">
+
+		 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+
+		 <div id="secondary" class="widget-area" role="complementary">
+			 <h4>Recent Tweet</h4>
+		 <?php dynamic_sidebar( 'sidebar-2' ); ?>
+		 <a href="#" id="twitterfollowus">Follow us</a>
+		 </div>
+		 <?php endif; ?>
+
+
+ </div>
+
+
 
 <?php get_footer(); ?>

@@ -25,12 +25,14 @@ Text Domain:  accelerate-theme-child
 
 .blog-post {
   width:50%;
-  float:left;
   margin-bottom:2em;
+  float:left;
 
 }
 
-.blog-post h4 {font:700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+
+
+.blog-post h4{font:700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
               color: #a6a6a6;
               text-transform: uppercase;
               margin: 2em 0 .5em;
@@ -47,6 +49,40 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+#secondary {
+  width:50%;
+  clear:both;
+  display:inline-block;
+  padding-left:50px;
+
+
+}
+
+
+#secondary h4 {font:700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+              color: #a6a6a6;
+              text-transform: uppercase;
+              margin: 2em 0 .5em;
+
+}
+
+#pi_simpletwittertweets-2 h3{text-align:left;
+                            font-size: 1.5em;
+
+}
+
+#pi_simpletwittertweets-2 ul li {list-style:none;
+
+}
+
+#twitterfollowus  {font-family: 'Montserrat';
+font-weight: 700;
+color: #45ac9d;
+text-transform: uppercase;
+padding:20px;
+
 }
 
 
@@ -91,6 +127,7 @@ img {width:100%;
 
 .sample-case-study {display:inline-block;
                           float:left;
+                          clear:right;
                           list-style: none;
 
 }
@@ -198,5 +235,67 @@ div .site-content-services{display:block;
 }
 
 .site-content-services h3 {text-transform: uppercase;
+
+}
+
+/*Style for 404 page*/
+
+
+.page-header-404 h1 {text-transform: uppercase;
+                      font-size:2.6em;
+
+                      font-family:'Bangers', 'Montserrat', 'Open Sans', Arial, sans-serif;
+
+}
+
+.page-header-404 .custom-h1 {font-size:3.8em;
+                              color: #F3A20D;
+
+}
+
+#linktitle {color:blue;
+              text-decoration: underline;
+
+}
+
+
+.page-content {width:60%;
+  float:left;
+  margin-top:0;
+
+
+
+}
+
+
+.image-404 img {
+  height: auto;
+  width: 40%;
+  padding-top:45px;
+  padding-left:20px;
+  border-radius: 50%;
+}
+
+input[type="submit"] {background-color:#45ac9d;
+                      color:white;
+
+
+}
+
+.page-content ul li {list-style:none;
+  display:inline-block;
+  padding:0;
+  margin:0;
+  text-align:center;
+  width:100px;
+
+
+}
+
+.page-content ul li a {font-family: 'Montserrat';
+font-weight: 700;
+color: #45ac9d;
+text-transform: uppercase;
+
 
 }
