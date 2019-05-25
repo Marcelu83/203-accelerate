@@ -211,7 +211,7 @@ div .nf-before-form {padding-top:3em;
 
 }
 
-div .services-images {overflow:clear;
+div .services-images {overflow:auto;
                       width:20%;
                       margin-left:3em;
 
@@ -226,7 +226,6 @@ div .services-images {overflow:clear;
                         align-items:center;
                         padding:0 17em;
 
-
 }
 
 div .site-content-services{display:block;
@@ -237,6 +236,17 @@ div .site-content-services{display:block;
 .site-content-services h3 {text-transform: uppercase;
 
 }
+
+.individual-services h4 {font-size:25px;
+                        font-weight:200;
+
+}
+
+.individual-services img {max-width:100%;
+
+
+}
+
 
 /*Style for 404 page*/
 

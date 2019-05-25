@@ -28,21 +28,23 @@ get_header(); ?>
 		<h3>Our Services</h3>
 		<p>We take pride in our clients and the content we create for them.<br>
 			Here's a brief overview of our offered services.</p>
-		</div>
 
-		<div class="description-services">
+		<div class="individual-services">
 			<?php query_posts('post_type=services');?>
-				<?php while ( have_posts() ) : the_post();
-					$image=get_field('image_illustration');
-					$size="full";?>
+				<?php while ( have_posts() ): the_post();
+				$image= get_field('image_illustration');
+				$size= "thumbnail"; ?>
 
-					<?php the_title();?>
-				<?php the_content();?>
-				<?php echo wp_get_attachment_image($image,$size);?>
-			<?php endwhile; ?>
-			<?php wp_reset_query(); ?>
-
+					<h4><?php the_title();?></h4>
+						<?php the_content();?>
+							<?php echo wp_get_attachment_image($image,$size);?>
+			<?php endwhile;?>
+			<?php wp_reset_query();?>
+			</div>
 		</div>
+
 	</section>
+
+
 
 <?php get_footer(); ?>

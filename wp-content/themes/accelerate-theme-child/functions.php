@@ -49,7 +49,7 @@ function create_custom_post_types() {
 									'name'=>__('Services'),
 									'singular_name' =>__('Service')
 								),
-								'public' =>false,
+								'public' =>true,
 								'has archive'=>true,
 								'rewrite'=> array('slug'=> 'accelerate-services'),
 								)
@@ -72,6 +72,6 @@ function accelerate_theme_child_widget_init() {
 	    'before_title' => '<h3 class="widget-title">',
 	    'after_title' => '</h3>',
 	) );
-	
+
 }
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
