@@ -212,7 +212,6 @@ div .nf-before-form {padding-top:3em;
 }
 
 div .services-images {overflow:auto;
-                      width:20%;
                       margin-left:3em;
 
 
@@ -228,24 +227,50 @@ div .services-images {overflow:auto;
 
 }
 
-div .site-content-services{display:block;
-                          text-align:center;
+.wrapper-about {display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow:row wrap;
 
 }
 
-.site-content-services h3 {text-transform: uppercase;
+
+.services-general h3 {text-align:center;
+                      text-transform: uppercase;
 
 }
 
-.individual-services h4 {font-size:25px;
-                        font-weight:200;
+.services-general p {
+
+  text-align:center;
 
 }
 
-.individual-services img {max-width:100%;
 
+.individual-services {
+
+  padding:50px;
 
 }
+
+.individual-service-description {
+
+display:flex;
+justify-content: center;
+align-items: center;
+flex-flow:row wrap;
+}
+
+.container-text {
+  width:50%;
+
+}
+
+
+
+
+
+
 
 
 /*Style for 404 page*/
