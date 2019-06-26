@@ -31,14 +31,14 @@ get_header(); ?>
 			Here's a brief overview of our offered services.</p>
 		</div>
 
-		<div class="individual-services">
+		<div class="services">
+
 			<?php query_posts('post_type=services');?>
 				<?php while ( have_posts() ): the_post();
 				$image= get_field('image_illustration');
 				$size= "thumbnail"; ?>
 
-
-				<div class="individual-service-description">
+				<div class="individual-service">
 
 					<div class="container-text">
 					<h4><?php the_title();?></h4>
@@ -49,11 +49,12 @@ get_header(); ?>
 							<?php echo wp_get_attachment_image($image,$size);?>
 						</figure>
 
+					</div>
+
 			<?php endwhile;?>
 			<?php wp_reset_query();?>
 
-		</div>
-		</div>
+	</div>
 
 	</section>
 

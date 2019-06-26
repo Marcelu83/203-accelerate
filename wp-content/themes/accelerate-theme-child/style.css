@@ -195,7 +195,7 @@ div .nf-before-form {padding-top:3em;
   float:right;
 }
 
-/*Styles for Service post*/
+/*Styles for Service post*
 
 .individual-services {height:auto;
 
@@ -243,17 +243,16 @@ div .services-images {overflow:auto;
 .services-general p {
 
   text-align:center;
-
 }
 
 
-.individual-services {
+.services {
 
   padding:50px;
 
 }
 
-.individual-service-description {
+.individual-service {
 
 display:flex;
 justify-content: center;
@@ -262,7 +261,13 @@ flex-flow:row wrap;
 }
 
 .container-text {
-  width:50%;
+  width:45%;
+
+}
+
+.individual-service :nth-child (even) {
+
+   background-color:red;
 
 }
 
