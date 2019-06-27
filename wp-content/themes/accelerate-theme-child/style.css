@@ -261,18 +261,20 @@ flex-flow:row wrap;
 }
 
 .container-text {
-  width:45%;
+  width:50%;
+  padding:2%;
 
 }
 
-.individual-service :nth-child (even) {
-
-   background-color:red;
+.service-illustration {margin-top:1%;
 
 }
 
+.individual-service:nth-child(odd) {
 
+flex-direction: row-reverse;
 
+}
 
 
 
